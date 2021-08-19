@@ -12,9 +12,9 @@ function addItem(event){
     const itemDiv = document.createElement('div');
     itemDiv.classList.add('item');
 
-    //creates the item li
+    //creates the item li and adds user input as the value
     const newItem = document.createElement('li');
-    newItem.innerText= 'hey';
+    newItem.innerText= itemInput.value;
     newItem.classList.add('itemToDo');
     itemDiv.appendChild(newItem);
 
@@ -30,6 +30,7 @@ function addItem(event){
     deleteButton.classList.add("deleteButton");
     itemDiv.appendChild(deleteButton);
 
-    //adds new div to the list
+    //adds the new div to the list and clears value from input
     list.appendChild(itemDiv);
+    itemInput.value = "";
 }

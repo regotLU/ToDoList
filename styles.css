@@ -29,7 +29,62 @@ form input, form button{
 }
 
 form button{
-    color: lightcoral;
-    background: white;
+    color: white;
+    background: #8ad6cc;
     cursor: pointer;
+}
+
+form button:hover{
+    background: #b2eee6;
+    color: #f99192;
+}
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.item{
+    margin: 1rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item li{
+    flex: 1;
+}
+.itemToDo{
+    padding: 0rem 0.5rem;
+}
+
+.deleteButton,.completeButton{
+    background: #385a7c;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.completeButton{
+    background: #8ad6cc;
+}
+.completeButton:hover{
+    background: #b2eee6;
+}
+.deleteButton:hover{
+    background: #2e4964;
+}
+.deleteButton:hover,.completeButton:hover{
+    color: #f99192;
 }
