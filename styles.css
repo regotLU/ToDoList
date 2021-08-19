@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightcoral;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: lightcoral;
+    background: white;
+    cursor: pointer;
+}
